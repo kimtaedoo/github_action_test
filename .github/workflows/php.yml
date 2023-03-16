@@ -28,4 +28,4 @@ jobs:
       run: php ./test.php
 
     - name: send SNS
-      run: aws sns publish --topic-arn ${{ variables.SNS_ARN }} --message "This message from Github Actions." --subject "Github Action Test"
+      run: aws sns publish --topic-arn ${{ vars.SNS_ARN }} --message "This message from Github Actions." --subject "Github Action Test"
